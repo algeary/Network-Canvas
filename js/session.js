@@ -216,6 +216,7 @@ var Session = function Session() {
         }, false);
 
         var sessionMenu = window.menu.addMenu('Session','cogs');
+		
         window.menu.addItem(sessionMenu, 'Reset Session', 'fa-undo', function() {
             window.BootstrapDialog.show({
                 type: window.BootstrapDialog.TYPE_DANGER,
@@ -239,7 +240,7 @@ var Session = function Session() {
         });
 
         window.menu.addItem(sessionMenu, 'Download Data', 'fa-download', function() { clickDownloadInput(); });
-
+		window.menu.addItem(sessionMenu, "Create Questionnaire", "fa fa-plus-square-o", function(){});
         window.menu.addItem(sessionMenu, 'Purge Database', 'fa-trash', function() {
             window.BootstrapDialog.show({
                 type: window.BootstrapDialog.TYPE_DANGER,
